@@ -1,0 +1,9 @@
+<launch>
+
+    <include file="$(find zed_wrapper)/launch/zed.launch" />
+
+    <node pkg="pimot_szwajkowski" type="face_detection_mv.py" name="face_detection_mv" />
+
+    <node pkg="pimot_szwajkowski" type="move_detection.py" name="move_detection" />
+
+</launch>

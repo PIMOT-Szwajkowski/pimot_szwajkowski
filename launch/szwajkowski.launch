@@ -1,0 +1,7 @@
+<launch>
+
+    <include file="$(find zed_wrapper)/launch/zed.launch" />
+
+    <node pkg="pimot_szwajkowski" type="szwajkowski.py" name="szwajkowski" />
+
+</launch>

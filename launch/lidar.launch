@@ -1,0 +1,9 @@
+<launch>
+
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" />
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-f velodyne" />
+
+    <node pkg="pimot_szwajkowski" type="scan_subscriber.py" name="scan_subscriber" />
+
+</launch>
